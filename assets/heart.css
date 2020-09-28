@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+
+  background-color: #000;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+}
+span {
+  bottom: 5000;
+  position: absolute;
+  background: url(./heart.png);
+  /* pointer-events: none; */
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  animation: animate 3s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: translate(-50%, -1000%);
+    opacity: 1;
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -1000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+  }
+}
